@@ -1,17 +1,74 @@
-console.log(22 + 59);
+function getComputerChoice(choice1){
 
-
-let divide = "77";
-
-console.log((4+6+9) /divide);
-
-let a = 10;
-console.log(a);
-
-const string = "The revolution will not be televised.";
-console.log(string);
-
-const name = "Chris";
-const greeting = `Hello, ${name}`;
-console.log(greeting); // "Hello, Chris"
-
+    let randomint = Math.random();
+    let choice ;
+    
+    
+    if(randomint<=0.33){
+        choice = 'rock';
+        
+    }
+    if(randomint>0.33 && randomint<0.66){
+        choice = 'paper';
+       
+        
+    }
+     if(randomint>=0.66){
+        choice = 'scizzors';
+        }
+        
+        
+    
+    return choice;
+    }
+    
+    function player(choice1){
+    
+    let p = prompt("type either '1' , '2', '3' ");
+    
+    //let promptkeylog;
+    let choice ;
+    
+    
+    if(p == '1'){
+        choice = 'rock';
+        
+    }
+    if(p == '2'){
+        choice = 'paper';
+       
+        
+    }
+    if(p == '3'){
+        choice = 'scizzors';
+        }
+        
+        
+    
+    return choice;
+    }
+    
+    function game(player, computer){
+        let result;
+        if(player == 'rock' && computer == 'sizzors'){
+            alert("player wins!")
+        }
+        if(player == 'scizzors' && computer == 'paper'){
+            alert("player wins!")
+        }
+        if(player == 'paper' && computer == 'rock'){
+            alert("player wins!")
+        }
+        if(player == computer){
+            alert("draw")
+        }
+        else{
+            alert("computer wins!");
+        }
+        
+        }
+    
+    
+    
+    game(player(),getComputerChoice());
+    
