@@ -1,9 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+:root{
+    background-color: rgb(11, 54, 87);
+}
 nav{
     font-family: 'Montserrat', sans-serif;
     font-size: xx-large;
     text-align: center;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px rgba(246, 246, 246, 0.263);
+}
+
+.header2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(246, 246, 246, 0.263);
+}
+
+#highlight{
+color:white !important;
 }
