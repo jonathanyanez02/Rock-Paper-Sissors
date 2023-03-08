@@ -24,7 +24,7 @@ function getComputerChoice(choice1){
     
     function player(choice1){
     
-    let p = prompt("type either '1' , '2', '3' ");
+    let p = prompt("type either: \n'1'[rock]\n'2'[paper]\n'3'[scizzors] \n");
     
     //let promptkeylog;
     let choice ;
@@ -50,25 +50,26 @@ function getComputerChoice(choice1){
     
     function game(player, computer){
         let result;
-        if(player == 'rock' && computer == 'sizzors'){
+        if(player == 'rock' && computer == 'scizzors'){
             alert("player wins!")
         }
-        if(player == 'scizzors' && computer == 'paper'){
+        else if(player == 'scizzors' && computer == 'paper'){
             alert("player wins!")
         }
-        if(player == 'paper' && computer == 'rock'){
+        else if(player == 'paper' && computer == 'rock'){
             alert("player wins!")
         }
-        if(player == computer){
+        else if(player == computer){
             alert("draw")
         }
         else{
             alert("computer wins!");
         }
+        console.log("player answer: " + player)
+        console.log("computer answer: " + computer)
         
         }
     
     
     
-    game(player(),getComputerChoice());
-    
+   // game(player(),getComputerChoice());
