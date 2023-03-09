@@ -25,9 +25,17 @@ nav {
     justify-content: center;
 }
 
-#box1,
-#box2,
-#box3 {
+#box1 {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-color: #ccc;
+    transition: transform 0.2s ease-in-out;
+    
+
+}
+
+#box2 {
     width: 100px;
     height: 100px;
     margin: 0 10px;
@@ -35,8 +43,22 @@ nav {
     transition: transform 0.2s ease-in-out;
 }
 
+#box3 {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    background-color: #ccc;
+    transition: transform 0.2s ease-in-out;
+
+
+}
+
 #box1:hover,
 #box2:hover,
 #box3:hover {
+    transform: scale(1.1);
+}
+
+img{
     transform: scale(1.1);
 }
