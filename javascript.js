@@ -73,3 +73,6 @@ function getComputerChoice(choice1){
     
     
    // game(player(),getComputerChoice());
+
+   //
+   var box = document.getElementById("box");
